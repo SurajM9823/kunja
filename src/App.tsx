@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-// 👆 just change this one line to HashRouter
-
+import ScrollToTop from './ScrollToTop'; // 👈 import it here
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import AcademicsPage from './pages/AcademicsPage';
@@ -13,6 +12,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* 👈 Add this line to trigger scroll to top */}
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
