@@ -1,5 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+// 👆 just change this one line to HashRouter
+
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import AcademicsPage from './pages/AcademicsPage';
